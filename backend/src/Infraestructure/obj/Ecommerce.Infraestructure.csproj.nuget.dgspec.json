@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ecommerce\\backend\\src\\Core\\Ecommerce.Application\\Ecommerce.Application.csproj": {}
+    "C:\\ecommerce\\backend\\src\\Infraestructure\\Ecommerce.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\ecommerce\\backend\\src\\Core\\Ecommerce.Application\\Ecommerce.Application.csproj": {
+    "C:\\ecommerce\\backend\\src\\Infraestructure\\Ecommerce.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ecommerce\\backend\\src\\Core\\Ecommerce.Application\\Ecommerce.Application.csproj",
-        "projectName": "Ecommerce.Application",
-        "projectPath": "C:\\ecommerce\\backend\\src\\Core\\Ecommerce.Application\\Ecommerce.Application.csproj",
+        "projectUniqueName": "C:\\ecommerce\\backend\\src\\Infraestructure\\Ecommerce.Infraestructure.csproj",
+        "projectName": "Ecommerce.Infraestructure",
+        "projectPath": "C:\\ecommerce\\backend\\src\\Infraestructure\\Ecommerce.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\ecommerce\\backend\\src\\Core\\Ecommerce.Application\\obj\\",
+        "outputPath": "C:\\ecommerce\\backend\\src\\Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
