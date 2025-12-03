@@ -29,4 +29,6 @@ public class Product : BaseDomainModel
     public int CategoriaId { get; set; }
 
     public virtual Category? Category { get; set; }
+    public virtual ICollection<Review>? Reviews { get; set; }
+    public virtual ICollection<Image>? Images { get; set; }
 }

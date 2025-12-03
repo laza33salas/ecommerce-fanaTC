@@ -17,11 +17,31 @@ public class EcommerceDbContext : IdentityDbContext<Usuario>
 
         //Relaciones 
         builder.Entity<Category>()
-            .HasMany(p => p.Products)
+            .HasMany(p => p.Products) 
             .WithOne(r => r.Category)
             .HasForeignKey(r => r.CategoriaId)
             .IsRequired()
             .OnDelete(DeleteBehavior.Restrict);
+
+         builder.Entity<Product>()
+            .HasMany(p => p. Reviews)
+            .WithOne(r => r.Product)
+            .HasForeignKey(r => r.ProductId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+         builder.Entity<Product>()
+            .HasMany(p => p. Images)
+            .WithOne(r => r.Product)
+            .HasForeignKey(r => r.ProductId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+         builder.Entity<ShoppingCart>()
+            .HasMany(p => p. ShoppingCartItems)
+            .WithOne(r => r. ShoppingCart)
+            .HasForeignKey(r => r. ShoppingCartId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+
 
         //Restricciones de longitud para Identity
         builder.Entity<Usuario>().Property(x => x.Id).HasMaxLength(36);

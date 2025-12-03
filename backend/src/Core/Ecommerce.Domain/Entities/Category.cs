@@ -8,4 +8,7 @@ namespace Ecommerce.Domain.Entities;
     {
         [Column(TypeName = "nvarchar(100)")]
         public string? Name { get; set; }
+
+
+        public virtual ICollection<Product>? Products { get; set; }
     }

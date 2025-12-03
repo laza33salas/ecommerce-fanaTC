@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Ecommerce.Domain.Common;
-using Ecommerce.Domain.Entites;
+
 
 
 namespace Ecommerce.Domain.Entities;
