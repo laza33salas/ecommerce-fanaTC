@@ -1,5 +1,5 @@
 using Ecommerce.Domain.Common;
-namespace Ecommerce.Domain.Entites;
+namespace Ecommerce.Domain.Entities;
 
 public class ShoppingCart : BaseDomainModel
 {
