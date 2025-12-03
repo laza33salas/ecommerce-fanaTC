@@ -13,6 +13,17 @@ public class EcommerceDbContext : IdentityDbContext<Usuario>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+
+
+        //Relaciones 
+        builder.Entity<Category>()
+            .HasMany(p => p.Products)
+            .WithOne(r => r.Category)
+            .HasForeignKey(r => r.CategoriaId)
+            .IsRequired()
+            .OnDelete(DeleteBehavior.Restrict);
+
+        //Restricciones de longitud para Identity
         builder.Entity<Usuario>().Property(x => x.Id).HasMaxLength(36);
         builder.Entity<Usuario>().Property(x => x.NormalizedUserName).HasMaxLength(90);
         builder.Entity<IdentityRole>().Property(x => x.Id).HasMaxLength(36);

@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Ecommerce.Domain.Common;
 using Ecommerce.Domain.Enums;
 
-namespace Ecommerce.Domain.Entites;
+namespace Ecommerce.Domain.Entities;
 
 public class Product : BaseDomainModel
 {
@@ -27,4 +27,6 @@ public class Product : BaseDomainModel
     public string? Medidas { get; set; }
     public int Stock { get; set; }
     public int CategoriaId { get; set; }
+
+    public virtual Category? Category { get; set; }
 }
