@@ -3,7 +3,7 @@ using Ecommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
-namespace Ecommerce.Persistence;
+namespace Ecommerce.Infraestructure.Persistence;
 
 public class EcommerceDbContext : IdentityDbContext<Usuario>
 {

@@ -32,7 +32,7 @@ public class Order : BaseDomainModel
     
     [Column(TypeName = "decimal(10,2)")]
     public decimal Subtotal { get; set; }
-    public OrderStatus status { get; set; } = OrderStatus.Pending;
+    public OrderStatus Status { get; set; } = OrderStatus.Pending;
      [Column(TypeName = "decimal(10,2)")]
     public decimal Total { get; set; }
      [Column(TypeName = "decimal(10,2)")]
