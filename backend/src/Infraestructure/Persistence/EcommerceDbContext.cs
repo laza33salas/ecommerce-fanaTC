@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Ecommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Ecommerce.Domain.Common;
 
 namespace Ecommerce.Infraestructure.Persistence;
 
@@ -9,6 +10,29 @@ public class EcommerceDbContext : IdentityDbContext<Usuario>
 {
    public EcommerceDbContext(DbContextOptions<EcommerceDbContext> options) : base(options)
    {}
+
+   public override Task<int>SaveChangesAsync(CancellationToken cancellationToken = default)
+   {
+       var userName = "system"; 
+
+       foreach (var entry in ChangeTracker.Entries<BaseDomainModel>())
+       {
+           switch (entry.State)
+           {
+               case EntityState.Added:
+                   entry.Entity.CreatedBy = userName;
+                   entry.Entity.CreatedDate = DateTime.UtcNow;
+                   break;
+               case EntityState.Modified:
+                   entry.Entity.LastModifiedBy = userName;
+                   entry.Entity.LastModifiedDate = DateTime.UtcNow;
+                   break;
+           }
+
+           
+       }
+         return base.SaveChangesAsync(cancellationToken);
+   }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
