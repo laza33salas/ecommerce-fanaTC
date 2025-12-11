@@ -14,5 +14,5 @@ public abstract class BaseDomainModel
     public DateTime? LastModifiedDate { get; set; }
 
 //¿Quien lo modificó por última vez?
-    public DateTime? LastModifiedBy { get; set; }
+    public string? LastModifiedBy { get; set; }
 }

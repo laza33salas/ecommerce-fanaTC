@@ -1,0 +1,64 @@
+[
+    {
+        "nombre" : "FERNANDO ALONSO - ASTON MARTIN AMR23 #14 - FORMULA 1 AÑO 2023",
+        "precio": 40000,
+        "precioTransferencia": 38000,
+        "descripcion": "Material: acero aleado, piezas de plastico y ruedas de goma // Medidas: 13cm de largo x 5cm de ancho // Fabricante: burago",
+        "rating": 5,
+        "fabricante":"Burago",
+        "material": "azar",
+        "medidas": "30x30cm",
+        "stock": 1000,
+        "categoryId": 1
+    },
+    {
+        "nombre" : "ALEX MARQUEZ - GRESINI RACING TEAM #73 - MOTO GP AÑO 2024",
+        "precio": 35000,
+        "precioTransferencia": 38000,
+        "descripcion": "Material: metal y plastico // Medidas: 11cm de largo x 5cm de ancho // Fabricante: maisto",
+        "rating": 4,
+        "fabricante":"Maisto",
+        "material": "azar",
+        "medidas": "30x30cm",
+        "stock": 500,
+        "categoryId": 2
+    },
+    {
+        "nombre" : "PACK HW GETAWAYS",
+        "precio": 40000,
+        "precioTransferencia": 38000,
+        "descripcion": "Contenido: 5 autos // Material: metal y plastico // Medidas: 8cm de largo x 3cm de ancho // Fabricante: Mattel",
+        "rating": 5,
+        "fabricante":"Acer",
+        "material": "azar",
+        "medidas": "30x30cm",
+        "stock": 500,
+        "categoryId": 3
+    },
+    {
+        "nombre" : "REMERA MARCOS DI PALMA TC 2001 #5 CHEVROLET",
+        "precio": 12000,
+        "precioTransferencia": 38000,
+        "descripcion": "Tela: Modal Premium - 64% poliester - 32% viscosa - 4% espandex",
+        "rating": 3,
+        "fabricante":"-",
+        "material": "azar",
+        "medidas": "30x30cm",
+        "stock": 500,
+        "categoryId": 4
+    },
+    {
+        "nombre" : "AGUSTIN CANAPINO - CAMARO #86 - TC AÑO 2025",
+        "precio": 22000,
+        "precioTransferencia": 38000,
+        "descripcion": "Material: carroceria de plastico PET y ruedas de goma // Medidas: 15cm de largo x 6cm de ancho // Fabricante: Claseslot",
+        "rating": 5,
+        "fabricante":"Claseslot",
+        "material": "azar",
+        "medidas": "30x30cm",
+        "stock": 500,
+        "categoryId": 5
+    }
+   
+
+]
