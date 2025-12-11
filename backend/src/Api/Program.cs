@@ -1,6 +1,7 @@
 using System.Text;
 using Ecommerce.Domain.Entities;
 using Ecommerce.Infraestructure.Persistence;
+using Ecommerce.Infraestructure.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -11,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddInfraestructureServices(builder.Configuration);
 
 //Cadena de conexion
 builder.Services.AddDbContext<EcommerceDbContext>(options => 
