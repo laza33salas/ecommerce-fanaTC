@@ -9,7 +9,7 @@
         "material": "azar",
         "medidas": "30x30cm",
         "stock": 1000,
-        "categoryId": 1
+        "categoriaId": 1
     },
     {
         "nombre" : "ALEX MARQUEZ - GRESINI RACING TEAM #73 - MOTO GP AÑO 2024",
@@ -21,7 +21,7 @@
         "material": "azar",
         "medidas": "30x30cm",
         "stock": 500,
-        "categoryId": 2
+        "categoriaId": 2
     },
     {
         "nombre" : "PACK HW GETAWAYS",
@@ -33,7 +33,7 @@
         "material": "azar",
         "medidas": "30x30cm",
         "stock": 500,
-        "categoryId": 3
+        "categoriaId": 3
     },
     {
         "nombre" : "REMERA MARCOS DI PALMA TC 2001 #5 CHEVROLET",
@@ -45,7 +45,7 @@
         "material": "azar",
         "medidas": "30x30cm",
         "stock": 500,
-        "categoryId": 4
+        "categoriaId": 4
     },
     {
         "nombre" : "AGUSTIN CANAPINO - CAMARO #86 - TC AÑO 2025",
@@ -57,7 +57,7 @@
         "material": "azar",
         "medidas": "30x30cm",
         "stock": 500,
-        "categoryId": 5
+        "categoriaId": 5
     }
    
 

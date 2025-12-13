@@ -1,7 +1,7 @@
 using System.Text;
 using Ecommerce.Domain.Entities;
-using Ecommerce.Infraestructure.Persistence;
-using Ecommerce.Infraestructure.Repositories;
+using Ecommerce.Infrastructure.Persistence;
+using Ecommerce.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -84,5 +85,27 @@ app.UseAuthorization();
 app.UseCors("CorsPolicy");
 
 app.MapControllers();
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    
+    try
+    {
+        var context = services.GetRequiredService<EcommerceDbContext>();
+        var userManager = services.GetRequiredService<UserManager<Usuario>>();
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+        await context.Database.MigrateAsync();
+        await Ecommerce.Infrastructure.Persistence.EcommerceDbContextData.LoadDataAsync(context, userManager, roleManager, loggerFactory);
+
+    }catch(Exception ex)
+    {
+        var logger = loggerFactory.CreateLogger<Program>();
+        logger.LogError(ex, "Error en la migracion");
+    }
+}
+
 
 app.Run();

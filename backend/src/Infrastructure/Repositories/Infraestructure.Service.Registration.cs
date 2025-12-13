@@ -3,7 +3,7 @@ using Ecommerce.Application.Persistence;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Ecommerce.Infraestructure.Repositories;
+namespace Ecommerce.Infrastructure.Repositories;
 
 public static class InfraestructureServiceRegistration
 {
