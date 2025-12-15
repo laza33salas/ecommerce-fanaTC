@@ -1,0 +1,28 @@
+smtp4dev version 3.12.0+ab82ab4df8311e0896fca87c868677073a997eaa
+https://github.com/rnwood/smtp4dev
+.NET Core runtime version: .NET 8.0.22
+Install location: C:\ecommerce\backend
+DataDir: C:\Users\Usuario\AppData\Roaming\smtp4dev
+Default settings file: C:\Users\Usuario\.dotnet\tools\.store\rnwood.smtp4dev\3.12.0\rnwood.smtp4dev\3.12.0\tools\net8.0\any\appsettings.json
+User settings file: C:\Users\Usuario\AppData\Roaming\smtp4dev\appsettings.json
+Using SQLite database. Location: C:\Users\Usuario\AppData\Roaming\smtp4dev\database.db, FileExists: false
+Applying database migrations. MigrationCount: 21, Migrations: 20181020095712_InitialCreate, 20181021072518_AddSessionToMessageReln, 20181021105259_AddSessionStartData, 20181022132948_AddSessionErrorInfo, 20181022163054_AddAttachmentCount, 20190310130227_AddMessageUnreadFlag, 20200904135503_AddRelayError, 20200924120747_AddImapState, 20210211134331_AddMessageSecurity, 20210731045851_UTCTimeMigration, 20210807032903_MessageRelay, 20210901140449_Fix_Messages_PK, 20240308081358_AddSessionEncoding, 20240309084542_AddMessageEightBitTransport, 20240425190525_AddMailboxes, 20240511110456_AddDeliveredTo, 20240515191815_FixSessionMessageCascasing, 20250908191900_AddBareLineFeedDetection, 20250909000000_AddSessionWarnings, 20250910000000_AddMailboxFolders, 20250912000000_AddMimeMetadataAndBodyText
+Database migrations completed successfully
+Creating mailbox Default
+Creating INBOX folder for mailbox Default
+Creating Sent folder for mailbox Default
+TLS mode: "None" Pop3TlsMode: "None"
+SMTP Server is listening on port 25 (::) with TLS mode ("None").
+Keeping last 100 messages per mailbox and 100 sessions.
+IMAP Server is listening on port 143 (::)
+IMAP Server is listening on port 143 (0.0.0.0)
+POP3 Server is listening on port 110 (::) with TLS mode None
+Now listening on: http://localhost:5000
+ServerOptions changed. Restarting server...
+SMTP server stopping...
+SMTP server stopped.
+IMAP Server is listening on port 143 (::)
+IMAP Server is listening on port 143 (0.0.0.0)
+TLS mode: "None" Pop3TlsMode: "None"
+SMTP Server is listening on port 25 (::) with TLS mode ("None").
+Keeping last 100 messages per mailbox and 100 sessions.

@@ -1,5 +1,8 @@
 using System.Text;
+using Ecommerce.Application.Contracts.Infraestructure;
+using Ecommerce.Application.Models.Email;
 using Ecommerce.Domain.Entities;
+using Ecommerce.Infrastructure.MessageImplementation;
 using Ecommerce.Infrastructure.Persistence;
 using Ecommerce.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication;
@@ -65,6 +68,18 @@ builder.Services.AddCors(opt =>
         policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
     });
 });
+
+// Email service propio
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+// FluentEmail (esto registra IFluentEmail)
+builder.Services
+    .AddFluentEmail("lazarocode@gmail.com")
+    .AddSmtpSender("localhost", 25);
+
+// Configuración
+builder.Services.Configure<EmailFluentSettings>(
+    builder.Configuration.GetSection("lazarocode@gmail.com"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

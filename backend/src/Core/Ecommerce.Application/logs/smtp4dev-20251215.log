@@ -1,0 +1,43 @@
+smtp4dev version 3.12.0+ab82ab4df8311e0896fca87c868677073a997eaa
+https://github.com/rnwood/smtp4dev
+.NET Core runtime version: .NET 8.0.22
+Install location: C:\ecommerce\backend\src\Core\Ecommerce.Application
+DataDir: C:\Users\Usuario\AppData\Roaming\smtp4dev
+Default settings file: C:\Users\Usuario\.dotnet\tools\.store\rnwood.smtp4dev\3.12.0\rnwood.smtp4dev\3.12.0\tools\net8.0\any\appsettings.json
+User settings file: C:\Users\Usuario\AppData\Roaming\smtp4dev\appsettings.json
+Using SQLite database. Location: C:\Users\Usuario\AppData\Roaming\smtp4dev\database.db, FileExists: true
+TLS mode: "None" Pop3TlsMode: "None"
+SMTP Server is listening on port 25 (::) with TLS mode ("None").
+Keeping last 100 messages per mailbox and 100 sessions.
+IMAP Server is listening on port 143 (::)
+IMAP Server is listening on port 143 (0.0.0.0)
+POP3 Server is listening on port 110 (::) with TLS mode None
+Now listening on: http://localhost:5500
+POP3 server stopped
+SMTP server stopping...
+SMTP server stopped.
+Exiting
+smtp4dev version 3.12.0+ab82ab4df8311e0896fca87c868677073a997eaa
+https://github.com/rnwood/smtp4dev
+.NET Core runtime version: .NET 8.0.22
+Install location: C:\ecommerce\backend\src\Core\Ecommerce.Application
+DataDir: C:\Users\Usuario\AppData\Roaming\smtp4dev
+Default settings file: C:\Users\Usuario\.dotnet\tools\.store\rnwood.smtp4dev\3.12.0\rnwood.smtp4dev\3.12.0\tools\net8.0\any\appsettings.json
+User settings file: C:\Users\Usuario\AppData\Roaming\smtp4dev\appsettings.json
+Using SQLite database. Location: C:\Users\Usuario\AppData\Roaming\smtp4dev\database.db, FileExists: true
+TLS mode: "None" Pop3TlsMode: "None"
+SMTP Server is listening on port 25 (::) with TLS mode ("None").
+Keeping last 100 messages per mailbox and 100 sessions.
+IMAP Server is listening on port 143 (::)
+IMAP Server is listening on port 143 (0.0.0.0)
+POP3 Server is listening on port 110 (::) with TLS mode None
+Now listening on: http://localhost:5500
+SMTP session started. ClientAddress: ::1
+SMTP message received. ClientAddress: ::1, From: lazarocode@gmail.com, To: lazarocode@gmail.com, SecureConnection: false, DeclaredSize: null
+Processing received message for mailbox 'Default' for recipients '["lazarocode@gmail.com"]'
+Message processing completed. MessageId: "859420f4-d9e3-457f-88d7-83d90909d2e2", Mailbox: Default, ImapUid: 2
+SMTP session completed. ClientAddress: ::1, MessageCount: 1, Duration: 357.9039ms
+POP3 server stopped
+SMTP server stopping...
+SMTP server stopped.
+Exiting
