@@ -1,14 +1,14 @@
 using FluentValidation;
 using MediatR;
 
-namespace Ecommerce.Application.Behaviours;
+namespace Ecommerce.Application.Behaviors;
 
-public class ValidationBehaviuor<TRequest, TResponse>
+public class ValidationBehavior<TRequest, TResponse>
 : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {
 private readonly IEnumerable<IValidator<TRequest>> _validators;
 
-public ValidationBehaviuor(IEnumerable<IValidator<TRequest>>  validators)
+public ValidationBehavior(IEnumerable<IValidator<TRequest>>  validators)
     {
         _validators = validators;
     }
